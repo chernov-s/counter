@@ -1,0 +1,22 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <mat-card class="form-wrapper">
+    <mat-card-header>
+      <mat-card-title>Login <i class="fas fa-sign-in-alt"></i></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <text-input [form]="form" [errors]="formErrors" name="email" placeholder="email"></text-input>
+      <text-input [form]="form" [errors]="formErrors" name="password" placeholder="password" type="password"></text-input>
+    </mat-card-content>
+    <mat-card-actions class="d-flex justify-content-between align-items-center">
+      <button mat-raised-button color="primary">
+        <ng-container *ngIf="!sending; else sendingSpinner">
+          Sign in
+        </ng-container>
+        <ng-template #sendingSpinner>
+          <i class="fas fa-circle-notch fa-spin"></i> Loading...
+        </ng-template>
+      </button>
+      <a routerLink="/sign-up">Sign up</a>
+    </mat-card-actions>
+  </mat-card>
+</form>

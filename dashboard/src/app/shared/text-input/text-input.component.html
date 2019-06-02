@@ -1,0 +1,13 @@
+<div [formGroup]="form">
+  <mat-form-field class="input-wrapper">
+    <input
+      matInput
+      type="{{ type || 'text' }}"
+      [placeholder]="placeholder"
+      [formControlName]="name"
+    >
+  </mat-form-field>
+  <mat-error>
+    <span *ngIf="errors[name]">{{ errors[name] }}</span>
+  </mat-error>
+</div>

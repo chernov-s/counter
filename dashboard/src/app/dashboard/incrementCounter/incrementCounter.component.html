@@ -1,0 +1,9 @@
+<section class="counter-wrapper">
+  <ng-container *ngIf="isNumber(counter); else loading">
+    Count: {{counter}}&nbsp;&nbsp;
+    <button mat-stroked-button color="primary" (click)="openDialog()">Increment</button>
+  </ng-container>
+  <ng-template #loading>
+    <mat-spinner></mat-spinner>
+  </ng-template>
+</section>

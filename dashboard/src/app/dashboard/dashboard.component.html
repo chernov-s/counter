@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Counter App</span>
+    <span class="toolbar-spacer"></span>
+    <button
+      mat-icon-button
+      aria-label="Example icon-button with a heart icon"
+      (click)="signOut()"
+    >
+      <mat-icon>exit_to_app</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>
