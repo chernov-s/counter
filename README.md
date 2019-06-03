@@ -84,7 +84,7 @@
 ## Back-end часть
 Бэкэнд уже развернут по адресу https://us-central1-dashboard-d8e03.cloudfunctions.net/app/counter .
 
-[Гайд по деплою](https://medium.com/@longboardcreator/deploying-angular-6-applications-to-firebase-hosting-b5dacde9c772) . Главное правило деплоя angular приложения в firebase: в файле **firebase.json** указать правило для корректной обрабатыватки SPA:
+[Гайд по деплою](https://medium.com/@longboardcreator/deploying-angular-6-applications-to-firebase-hosting-b5dacde9c772) . Главное правило деплоя angular приложения в firebase: в файле **firebase.json** указать правило для корректной обработки SPA:
 ```
 "rewrites": [
     {
